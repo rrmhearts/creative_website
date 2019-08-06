@@ -1,6 +1,12 @@
 /* Bootstrap Grid Examples*/
 
+/*
 .col-bg-red { background-color: red; }
 .col-bg-pink { background-color: pink; }
 .col-bg-blue { background-color: blue; }
 .col-bg-yellow { background-color: yellow; }
+*/
+
+h1 {
+    font-family: "Arimo", sans-serif;
+}

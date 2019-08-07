@@ -8,8 +8,31 @@ Colors:
     Black:       #000
 *********************************/
 
-h1 {
+/********************************
+HTML, Body
+*********************************/
+html, body {
+    height: 100%;
+}
+body {
+    color: #212226
+}
+
+h1,h2,h3,h4,h5,h6 {
     font-family: "Raleway", sans-serif;
+
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+section {
+    background-color: #fff; /* covered video */
+    overflow: hidden;
 }
 
 /********************************
@@ -40,6 +63,11 @@ Preloader
 /********************************
 Home
 *********************************/
+#home {
+    background: none; /* show video */
+    height: 100%; /* home covers entire browser window*/
+}
+
 #home-bg-video {
     position: fixed;
     top: 50%;
@@ -62,4 +90,85 @@ Home
     height: 100%;
     position: fixed;
     z-index: -1;
+}
+
+#home-content {
+    weight: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#home-heading h1 {
+    color: #fff;
+    font-size: 65px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 0;
+    display: inline-block;
+}
+
+
+#home-heading h1 span {
+    color:#f4c613;
+    font-weight: 300;
+}
+
+#home-text p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 10;
+    margin: 8px 0 30px 0;
+}
+
+/********************************
+Buttons
+*********************************/
+.btn-general {
+    font-family: "Raleway", sans-serif;
+    border-radius: 28px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0 6px;
+    padding: 12px 46px 12px 46px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+}
+
+.btn-home {
+    color: #fff;
+    border: 1px solid white;
+}
+
+.btn-home:hover,
+.btn-home:focus {
+    color: #fff;
+    background-color:#f4c613;
+    border: 1px solid #f4c613;
+}
+
+/********************************
+Arrow Down
+*********************************/
+#arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    color: #fff;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin-left: -16px;
+    margin-top: -16px;
+    z-index: 1;
+}
+
+#arrow-down:focus,
+#arrow-down:hover {
+    color: #f4c613;
 }

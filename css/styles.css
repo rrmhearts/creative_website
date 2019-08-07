@@ -1,11 +1,13 @@
 
 /********************************
 Colors:
-    Moon Yellow: #f4c613
+    Best green: #4acaa8
     Grey:        #212226
     White Smoke: #f4f4f4
     White:       #fff
     Black:       #000
+
+        Moon Yellow: #f4c613
 *********************************/
 
 /********************************
@@ -39,7 +41,7 @@ section {
 Preloader
 *********************************/
 #preloader {
-    background-color: white;
+    background-color: #fff;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -49,15 +51,15 @@ Preloader
 }
 
 #loadstatus {
-    background-image: url("../img/preloader/pinwheel.gif");
+    background-image: url("../img/preloader/preloader.gif");
     background-repeat: no-repeat;
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     position: absolute;
     left: 50%;
     top: 50%;
-    margin-top: -35px;
-    margin-left: -35px;
+    margin-top: -50;
+    margin-left: -50px;
 }
 
 /********************************
@@ -114,7 +116,7 @@ Home
 
 
 #home-heading h1 span {
-    color:#f4c613;
+    color:#4acaa8;
     font-weight: 300;
 }
 
@@ -147,8 +149,8 @@ Buttons
 .btn-home:hover,
 .btn-home:focus {
     color: #fff;
-    background-color:#f4c613;
-    border: 1px solid #f4c613;
+    background-color: #4acaa8;
+    border: 1px solid #4acaa8;
 }
 
 /********************************
@@ -170,5 +172,5 @@ Arrow Down
 
 #arrow-down:focus,
 #arrow-down:hover {
-    color: #f4c613;
+    color: #4acaa8;
 }

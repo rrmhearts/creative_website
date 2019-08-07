@@ -1,4 +1,3 @@
-
 /********************************
 Colors:
     Best green: #4acaa8
@@ -13,14 +12,22 @@ Colors:
 /********************************
 HTML, Body
 *********************************/
-html, body {
+html,
+body {
     height: 100%;
 }
+
 body {
     color: #212226
+        /* all text in body*/
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Raleway", sans-serif;
 
 }
@@ -33,7 +40,8 @@ p {
 }
 
 section {
-    background-color: #fff; /* covered video */
+    background-color: #fff;
+    /* covered video */
     overflow: hidden;
 }
 
@@ -41,13 +49,14 @@ section {
 Preloader
 *********************************/
 #preloader {
-    background-color: #fff;
+    background-color: #f4f4f4;
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 9999; /* stack order in FRONT */
+    z-index: 9999;
+    /* stack order in FRONT */
 }
 
 #loadstatus {
@@ -66,8 +75,10 @@ Preloader
 Home
 *********************************/
 #home {
-    background: none; /* show video */
-    height: 100%; /* home covers entire browser window*/
+    background: none;
+    /* show video */
+    height: 100%;
+    /* home covers entire browser window*/
 }
 
 #home-bg-video {
@@ -87,7 +98,7 @@ Home
 
 /* shades the video darker*/
 #home-overlay {
-    background-color: rgba(0,0,0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
     height: 100%;
     position: fixed;
@@ -95,7 +106,7 @@ Home
 }
 
 #home-content {
-    weight: 100%;
+    width: 100%;
     height: 100%;
     display: table;
 }
@@ -116,7 +127,7 @@ Home
 
 
 #home-heading h1 span {
-    color:#4acaa8;
+    color: #4acaa8;
     font-weight: 300;
 }
 
@@ -132,7 +143,7 @@ Buttons
 *********************************/
 .btn-general {
     font-family: "Raleway", sans-serif;
-    border-radius: 28px;
+    /*order-radius: 28px;*/
     font-size: 13px;
     text-transform: uppercase;
     margin: 0 6px;
@@ -173,4 +184,114 @@ Arrow Down
 #arrow-down:focus,
 #arrow-down:hover {
     color: #4acaa8;
+}
+
+/********************************
+Content Boxes
+*********************************/
+.content-box-lg {
+    padding: 100px 0;
+}
+
+.content-box-md {
+    padding: 80px 0;
+}
+
+/********************************
+Verticle headings
+*********************************/
+.vertical-heading h5 {
+    color: #4acaa8;
+    font-size: 14px;
+    text-transform: uppercase;
+    word-spacing: 3px;
+    display: inline-block;
+    /*width to text*/
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    position: relative;
+    top: 60px;
+    left: -45px;
+}
+
+.vertical-heading h2 {
+    margin: 0 0 0 30px;
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 45px;
+}
+
+/********************************
+About 01
+*********************************/
+
+#about-right p:first-child {
+    margin-bottom: 30px;
+}
+
+#about-bottom img {
+    margin: 0 auto;
+}
+
+/********************************
+About 02
+*********************************/
+
+#about-02 {
+    background-color: #f4f4f4;
+}
+
+.about-item {
+    background-color: #fff;
+    padding: 80px 30px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+}
+
+.about-item i {
+    font-size: 45px;
+    margin: 0;
+}
+
+.about-item h3 {
+    margin-bottom: 10px;
+}
+
+.about-item hr {
+    width: 50px;
+    height: 2px;
+    background-color: #4acaa8;
+    margin: 0 auto;
+    border-color: #4acaa8;
+}
+
+.about-item p {
+    margin-top: 20px;
+}
+
+/* hover state */
+.about-item:hover {
+    background-color: #4acaa8;
+}
+
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p {
+    color: #fff;
+}
+
+.about-item:hover hr {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.about-item:hover i {
+    transform: translateY(-15px);
+}
+
+/* smooth transitions */
+.about-item,
+.about-item i,
+.about-item hr {
+    transition: all 500ms ease-in-out;
 }

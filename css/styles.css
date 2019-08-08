@@ -341,3 +341,114 @@ Skills/ Team
 .team-member:hover .team-member-overlay {
     opacity: 1;
 }
+
+/********************************
+Social Icons
+*********************************/
+ul.social-list {
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul.social-list li {
+    display: inline-block; /* horizontal lines */
+    padding: 0;
+    margin-top: 45px;
+}
+
+ul.social-list li a {
+    border: 1px solid #fff;
+    width: 35px;
+    height: 35px;
+    display: inline-block; /* req for width/height props */
+    line-height: 35px;
+    color: #fff;
+    border-radius: 50%;
+    transition: all 300ms linear;
+}
+
+ul.social-list li:nth-child(1) a:hover {
+    background: #3b5998;
+    border-color: transparent;
+}
+
+ul.social-list li:nth-child(2) a:hover {
+    background: #00aced;
+    border-color: transparent;
+}
+
+ul.social-list li:nth-child(3) a:hover {
+    background: #535353;
+    border-color: transparent;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #4acaa8
+}
+
+/********************************************
+Skills
+********************************************/
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill h4 {
+    line-height: 60px;
+    margin: 0;
+    font-weight: normal;
+}
+.progress {
+    height: 30px;
+    border-radius: 0;
+    background-color: #f2f2f2;
+    overflow: visible; /* allows seeing span that falls off progress bar.*/
+}
+
+.progress-bar {
+    background-color: #4acaa8;
+    position: relative; /* for placing percentages*/
+}
+
+.progress-bar span {
+    font-size: 11px;
+    font-weight: 100;
+    font-family: "Open Sans", sans-serif;
+    background: #212226;
+    padding: 3px;
+    position: absolute;
+    left: 95%;
+    top: -45px;
+}
+
+.progress-bar span::before {
+    content:"";
+    border-top: 8px solid #212226;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    position: absolute;
+    bottom: -8px;
+    left: 25%;
+}
+
+.btn-skill {
+    color: #000;
+    border: 1px solid #000;
+    width: 110px;
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn-skill:hover,
+.btn-skill:focus {
+    color: #fff;
+    background-color: #4acaa8;
+    border: 1px solid #4acaa8;
+}

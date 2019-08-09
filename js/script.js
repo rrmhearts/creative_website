@@ -53,9 +53,47 @@ $( () => {
                 'width': newWidth
             }, 1500);
         });
-        this.destroy();
+        this.Waypoint.destroyAll();
     },
     {
         offset: 'bottom-in-view'
     });
+
+      
+    $('#about-bottom').waypoint(() => {
+        $.notify.addStyle('notify-style', {
+            html: "<div><span data-notify-text/></div>",
+            classes: {
+              base: {
+                "white-space": "nowrap",
+                "background-color": "#4acaa8",
+                "color": "#fff",
+                "padding": "10px",
+                "margin": "-140px 0px 0 0px",
+                //"border-radius": "20px",
+                "box-shadow": "0 0 15px rgba(0, 0, 0, .45)"
+              },
+            }
+          });
+          $('#about-bottom').trigger('notify-hide');
+          $('#about-bottom').notify('Cute baby!', {
+              style: 'notify-style',
+              direction: 'right'
+          });
+        
+    });
+    
   });
+
+
+
+/*   $( () => {
+    $('#about-bottom').waypoint(
+        function() {
+          notify('Basic waypoint triggered')
+        }, 
+        {
+            offset: '25%'
+        }
+      );
+  }); */

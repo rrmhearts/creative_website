@@ -452,3 +452,34 @@ Skills
     background-color: #4acaa8;
     border: 1px solid #4acaa8;
 }
+
+/********************************
+* Statement
+********************************/
+
+#statement {
+    background: url("../img/tech/tech-quote.jpg") no-repeat fixed center;
+    background-size: cover;
+/*
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+*/
+}
+
+#statement .content-box-lg {
+    background: rgba(0,0,0, 0.3);
+}
+
+#tech-statement h3 {
+    color: #fff;
+    font-size: 28px;
+    line-height: 45px;
+}
+
+#tech-statement p {
+    font-size: 14px;
+    color: #5cf1ca;
+    font-family: "Raleway", sans-serif;
+    margin-top: 8px;
+}

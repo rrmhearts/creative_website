@@ -670,6 +670,23 @@ Skills
     border-bottom: 3px solid #4acaa8;
 }
 
+.portfolio-item {
+    overflow: hidden;
+}
+/* Zoom Effect for Work page */
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    transition: transform .5s ease;
+    -webkit-transition: transform .5s ease;
+
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.2); /* zoom on hover */
+    -webkit-transform: scale(1.2); /* zoom on hover */
+}
+
 .portfolio-item-details {
     margin-top: 0px;
 }

@@ -6,11 +6,11 @@ $(window).on("load", () => {
     $('#preloader').delay(350).fadeOut('slow');
 });
 
+// Document load
+$( () => { 
 /********************************
  * Owl Carousel
  *******************************/
-//$(document).ready(function(){
-$( () => {
     $('#team-members').owlCarousel({
         loop:true,
         autoplay: true,
@@ -39,6 +39,7 @@ $( () => {
             }
         }
     });
+
 /********************************
  * Responsive Tabs
  *******************************/
@@ -48,9 +49,9 @@ $( () => {
     });
   });
 
-  /******************************************
-   * Progress Bars
-   *****************************************/
+/******************************************
+ * Progress Bars
+ *****************************************/
   $( () => {
 
     $('#progress-elements').waypoint(() => {
@@ -92,15 +93,22 @@ $( () => {
 
   });
 
+  $(window).on('load', () => {
+/********************************
+ * Isotope Tabs
+ *******************************/
+    // init Isotope
+    var $grid = $('.isotope-container').isotope({
+        // options
+    });
 
+    // filter items on button click
+    $('#isotope-filters').on( 'click', 'button', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
 
-/*   $( () => {
-    $('#about-bottom').waypoint(
-        function() {
-          notify('Basic waypoint triggered')
-        },
-        {
-            offset: '25%'
-        }
-      );
-  }); */
+        // active button
+        $('#isotope-filters').find('.active').removeClass('active');
+        $(this).addClass('active');
+    });
+  });

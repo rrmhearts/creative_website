@@ -627,3 +627,49 @@ Skills
     background-color: #212226;
     border: 1px solid #212226;
 }
+
+/* Portfolio */
+#portfolio .vertical-heading {
+    margin-bottom: 50px;
+}
+
+#portfolio .vertical-heading h5 {
+    left: -50px; /* overlapping h2 element */
+}
+
+.row.no-gaps [class*=col-] {
+    padding: 0;
+}
+
+/* Filters CSS */
+#isotope-filters {
+    margin-bottom: 10px;
+    padding: 20px 25px 20px 0px;
+}
+
+#isotope-filters button {
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: transparent;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    padding-right: 30px;
+}
+
+#isotope-filters button span{
+    display: block;
+    padding-bottom: 5px;
+    transition: border-color .4s ease-in-out;
+    -webkit-transition: border-color .4s ease-in-out;
+}
+
+#isotope-filters button.active span{
+    color: #4acaa8;
+    border-bottom: 3px solid #4acaa8;
+}
+
+.portfolio-item-details {
+    margin-top: 0px;
+}

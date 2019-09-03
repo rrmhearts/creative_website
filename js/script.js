@@ -39,6 +39,13 @@ $( () => {
             }
         }
     });
+/********************************
+ * Responsive Tabs
+ *******************************/
+    $('#services-tabs').responsiveTabs({
+        startCollapsed: 'accordion',
+        animation: 'slide'
+    });
   });
 
   /******************************************
@@ -59,7 +66,7 @@ $( () => {
         offset: 'bottom-in-view'
     });
 
-      
+
     $('#about-bottom').waypoint(() => {
         $.notify.addStyle('notify-style', {
             html: "<div><span data-notify-text/></div>",
@@ -80,9 +87,9 @@ $( () => {
               style: 'notify-style',
               direction: 'right'
           });
-        
+
     });
-    
+
   });
 
 
@@ -91,7 +98,7 @@ $( () => {
     $('#about-bottom').waypoint(
         function() {
           notify('Basic waypoint triggered')
-        }, 
+        },
         {
             offset: '25%'
         }

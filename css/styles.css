@@ -656,6 +656,7 @@ Skills
     box-shadow: none;
     -webkit-box-shadow: none;
     padding-right: 30px;
+    outline: 0;
 }
 
 #isotope-filters button span{
@@ -672,6 +673,7 @@ Skills
 
 .portfolio-item {
     overflow: hidden;
+    position: relative; /* for overlay */
 }
 /* Zoom Effect for Work page */
 .portfolio-item img {
@@ -679,14 +681,100 @@ Skills
     height: auto;
     transition: transform .5s ease;
     -webkit-transition: transform .5s ease;
-
 }
 
 .portfolio-item:hover img {
     transform: scale(1.2); /* zoom on hover */
-    -webkit-transform: scale(1.2); /* zoom on hover */
+    -webkit-transform: scale(1.12); /* zoom on hover */
+}
+
+.portfolio-item-overlay {
+    position: absolute; /* makes contents no longer block; */
+    top: 0;             /* same technique as preloader */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(14, 14, 17, 0.6);
+    cursor: zoom-in;
+    opacity: 0;
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
 }
 
 .portfolio-item-details {
-    margin-top: 0px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    /* put text in middle of image */
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.portfolio-item-details h3 {
+    color: #5cf1ca;
+    text-transform: uppercase;
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    transform: translateY(-20%);
+    -webkit-transform: translateY(-20%);
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+}
+
+/* little white lines */
+.portfolio-item-details span {
+    display: inline-block;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    height: 6px;
+    width: 30px;
+    margin: 11px auto 5px auto;
+}
+
+.portfolio-item-details p {
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    transform: translateY(20%);
+    -webkit-transform: translateY(20%);
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+}
+
+/* Show overlay on mouse over */
+.portfolio-item:hover
+.portfolio-item-details h3 {
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+}
+
+.portfolio-item:hover
+.portfolio-item-details p {
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+}
+
+.portfolio-item:hover
+.portfolio-item-overlay {
+    opacity: 1;
+}
+
+/****************
+ * Testimonials
+ ****************/
+ #testimonials {
+    background: url("../img/testimonial/ocean-test.jpg") no-repeat fixed center;
+    background-size: cover;
+}
+
+#testimonials .content-box-lg {
+    background: rgba(0,0,0, 0.3);
 }

@@ -41,6 +41,24 @@ $( () => {
     });
 
 /********************************
+ * Owl Carousel Testimonials
+ *******************************/
+$('#testimonial-slider').owlCarousel({
+    loop:false,
+    autoplay: false,
+    smartSpeed: 600,
+    margin:0,
+    autoplayHoverPause: true,
+    responsiveClass:true,
+
+    items:1,
+    nav:true,
+    dots: false,
+    navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
+        
+});
+
+/********************************
  * Responsive Tabs
  *******************************/
     $('#services-tabs').responsiveTabs({

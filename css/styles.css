@@ -778,3 +778,106 @@ Skills
 #testimonials .content-box-lg {
     background: rgba(0,0,0, 0.3);
 }
+
+#testimonial-slider {
+    padding: 10px;
+    background-color: white;
+}
+
+#testimonials .vertical-heading {
+    padding: 80px 0;
+    margin-bottom: 50px;
+}
+
+.testimonial {
+    padding: 20px 45px 0 45px;
+}
+
+.testimonial h3 {
+    font-size: 32px;
+    line-height: 35px;
+}
+
+.testimonial .stars {
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+}
+
+.testimonial p {
+    line-height: normal;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.testimonial .author .author-name-des {
+    width: 106px;
+    margin-top: 25px;
+    text-align: left;
+}
+
+.testimonial .author .author-name-des p {
+    margin: 0;
+}
+
+#blog {
+    background: #f4f4f4;
+}
+
+#blog-left p {
+    margin: 30px 0;
+}
+
+#blog-btn a {
+    margin: 0;
+}
+
+.blog-post {
+    background: #fff;
+    padding: 20px;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0, .1);
+    box-shadow: 0 0 10px 0 rgba(0,0,0, .1);
+    border-radius: 6px;
+}
+
+.blog-post h4 {
+    line-height: 40px;
+    margin: 0;
+}
+
+.blog-post > p {
+    line-height: 24px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.blog-post a {
+    display: inline-block;
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-family: "Raleway", "sans-serif";
+    color: #4acaa8;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+    -webkit-transition: all 400ms linear;
+    transition: all 400ms linear;
+}
+
+.blog-post a:hover {
+    color: #212226;
+}
+
+.blog-post .post-meta {
+    border-top: 1px solid #e0e0e0;
+    margin-top: 30px;
+    padding-top: 10px;
+}
+
+.blog-post .post-meta {
+    font-size: 11px;
+    font-family: "Raleway", sans-serif;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 0;
+}

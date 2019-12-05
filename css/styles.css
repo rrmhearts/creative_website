@@ -881,3 +881,68 @@ Skills
     font-weight: 500;
     margin: 0;
 }
+
+/**************************************************
+     Contact section
+**************************************************/
+#contact {
+    background: white;
+}
+
+ul.office-details {
+    list-style: none;
+    padding: 0;
+}
+
+ul.office-details li {
+    font-family: "Open Sans", sans-serif;
+    margin-top: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+ul.office-details li i {
+    font-size: 20px;
+    width: 45px;
+}
+
+#contact ul.social-list {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#contact ul.social-list li a {
+    color: #212226;
+    border: 1px solid #212226;
+    text-align: center;
+}
+
+#contact ul.social-list li a:hover {
+    color: #fff;
+    border-color: transparent;
+}
+/**************************************************
+     Google map 
+**************************************************/
+
+#map {
+    height: 600px;
+}
+
+/**************************************************
+     Footer  
+**************************************************/
+footer {
+    background: #212226;
+    padding: 30px;
+}
+
+footer p {
+    color: #fff;
+    line-height: 20px;
+}
+
+footer p span {
+    color: #4acaa8;
+}

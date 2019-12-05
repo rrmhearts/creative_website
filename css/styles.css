@@ -72,6 +72,63 @@ Preloader
 }
 
 /********************************
+Header
+********************************/
+.navbar {
+    padding: 35px 0 20px 0;
+    transition: all 300ms linear;
+    -webkit-transition: all 300ms linear;
+}
+
+.site-nav-wrapper {
+    padding: 0 85px;
+}
+
+.navbar-brand {
+    padding: 13px 15px;
+}
+
+ul.navbar-nav > li > a {
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+ul.navbar-nav > li > a:hover,
+ul.navbar-nav > li > a:focus {
+    background: none;
+    color: #4acaa8;
+}
+
+.white-nav-top {
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0 8px 6px -9px #999;
+    -webkit-box-shadow: 0 8px 6px -9px #999;
+    z-index: 2;
+
+}
+
+.white-nav-top ul.navbar-nav > li > a {
+    color: #212226;
+}
+
+.white-nav-top ul.navbar-nav > li > a:hover,
+.white-nav-top ul.navbar-nav > li > a:focus {
+    color: #4acaa8;
+}
+
+/* Scroll Spy active effect (Bootstrap feature) */
+.white-nav-top ul.navbar-nav > li.active > a {
+    color: #4acaa8;
+    font-weight: 500;
+}
+
+
+/********************************
 Home
 *********************************/
 #home {
@@ -164,6 +221,15 @@ Buttons
     border: 1px solid #4acaa8;
 }
 
+.btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 3px 15px;
+    border-radius: 4px;
+    font-size: 22px;
+    display: none;
+}
 /********************************
 Arrow Down
 *********************************/

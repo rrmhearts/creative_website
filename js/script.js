@@ -158,3 +158,54 @@ $('#testimonial-slider').owlCarousel({
         $(this).addClass('active');
     });
   });
+
+/********************************
+ * Navigation
+ *******************************/
+  
+ $(() => {
+
+    let showHideNav = () => {
+        if ( $(window).scrollTop() > 90 ) { //620
+            // Show white one
+            $("nav").addClass("white-nav-top");
+            $(".navbar-brand img").attr("src","img/logo/logo-dark.png");
+
+            // Show back to top button
+            $("#back-to-top").fadeIn();
+        } else {
+            // Hide white one
+            $("nav").removeClass("white-nav-top");
+            $(".navbar-brand img").attr("src","img/logo/logo.png");
+
+            // Hide back to top button
+            $("#back-to-top").fadeOut();
+
+        }
+    }
+
+    // On page load
+    showHideNav();
+
+    // On scroll
+    $(window).scroll(() => {
+        showHideNav();
+    });
+
+ });
+
+// Smooth scrolling
+
+$( () => {
+    $("a.smooth-scroll").click(function(event) {
+        // can't be arrow function because using this!
+        event.preventDefault();
+
+        // Get section id #about ...
+        let section_id = $(this).attr("href");
+
+        $("html, body").animate({
+            scrollTop: $(section_id).offset().top - 64
+        }, 1250, "easeInOutExpo"); //easing plugin
+    });
+});

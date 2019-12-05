@@ -32,11 +32,38 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="65">
     <!--Preloader-->
     <div id="preloader">
         <div id="loadstatus">&nbsp;</div>
     </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="site-nav-wrapper">
+                    <div class="navbar-header">
+                        <a href="#home" class="navbar-brand smooth-scroll"><img src="img/logo/logo.png" alt="logo"></a>
+                    </div>
+                    <!-- Main menu -->
+                    <div class="container">
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav pull-right">
+                                <li><a class="smooth-scroll" href="#home">Home</a></li>
+                                <li><a class="smooth-scroll" href="#about">About</a></li>
+                                <li><a class="smooth-scroll" href="#skills">Skills</a></li>
+                                <li><a class="smooth-scroll" href="#services">Services</a></li>
+                                <li><a class="smooth-scroll" href="#portfolio">Work</a></li>
+                                <li><a class="smooth-scroll" href="#blog">Blog</a></li>
+                                <li><a class="smooth-scroll" href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
     <!--Home page-->
     <section id="home">
@@ -63,13 +90,13 @@
                 </div>
 
                 <div id="home-btn">
-                    <a class="btn btn-general btn-home" role="button" href="#about" title="About me">About me</a>
+                    <a class="btn btn-general btn-home smooth-scroll" role="button" href="#about" title="About me">About me</a>
                 </div>
             </div>
         </div>
 
         <!--Arrow down-->
-        <a href="#about" id="arrow-down">
+        <a href="#about" id="arrow-down" class="smooth-scroll">
             <i class="fa fa-sort-down"></i>
         </a>
     </section> <!-- Home ends-->
@@ -889,7 +916,7 @@
                             <div class="form-group">
                                 <label for="exampleInput">Message</label>
                                 <textarea class="form-control" id="message" rows="3"></textarea>                            </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary btn-aqua">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -917,6 +944,9 @@
                 </div>
             </div>
         </div>
+        <!-- Back to top -->
+        <a href="#home" id="back-to-top" class="btn btn-sm btn-aqua btn-back-to-top smooth-scroll" title="home" role="button">
+            <i class="fa fa-angle-up"></i></a>
     </footer>
 
     <script src="js/jquery.js"></script>
@@ -945,6 +975,9 @@
     <script async
         src="https://maps.googleapis.com/maps/api/js?key=">
     </script>
+
+    <!-- Easing -->
+    <script src="js/jquery.easing.1.3.js"></script>
 
     <script src="js/script.js"></script>
 </body>

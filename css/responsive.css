@@ -1,0 +1,216 @@
+/************************************************************
+              Bootstrap 3 Media Queries
+************************************************************/
+
+/* Large devices (Desktops and Laptops) */
+@media (min-width: 1200px) and (max-width: 1299px) {
+
+    /* menu goes off the screen. */
+    .site-nav-wrapper {
+        padding: 0;
+    }
+}
+
+/* Medium devices (Landscape Tablets, small desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .site-nav-wrapper {
+        padding: 0;
+    }
+
+    .vertical-heading h2 {
+        font-size: 29px;
+    }
+
+    /* services 02, image not aligned with text box*/
+    #services-tabs .tab-bg {
+        padding: 16px 30px;
+        min-height: 400px;
+    }
+    .service-tab p {
+        line-height: 20px;
+    }
+
+    /* blog */
+    .blog-post .post-meta p {
+        line-height: 14px;
+        padding: 0;
+    }
+}
+
+/* Small devices (Portrait tablets & small laptops) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .site-nav-wrapper {
+        padding: 0;
+    }
+
+    /* home */
+    #home-heading h1 {
+        font-size: 41px;
+    }
+
+    #home-text p {
+        font-size: 13px;
+    }
+
+    .btn-general {
+        padding: 8px 30px;
+        font-size: 10px;
+    }
+
+    .vertical-heading h2 {
+        font-size: 29px;
+    }
+
+    #tech-statement h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    /* Services 02 */
+    .r-tabs-accordion-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .r-tabs-accordion-title a {
+        font-family: "Raleway", sans-serif;
+        font-size: 20px;
+        color: #212226;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    .r-tabs-accordion-title.r-tabs-state-active a {
+        color: #4acaa8;
+        font-weight: 700;
+        border-bottom: 3px solid #4acaa8;
+        padding-bottom: 5px;
+        transition: border-color 500ms linear;
+        -webkit-transition: border-color 500ms linear;
+    }
+
+    /* blog */
+    .blog-post .post-meta p {
+        line-height: 14px;
+        padding: 0;
+    }
+}
+
+/* Extra Small devices (Landscape phones & portrait phones) */
+@media (min-width: 0px) and (max-width: 767px) {
+
+    /* home */
+    #home-heading h1 {
+        font-size: 22px;
+    }
+
+    #home-text p {
+        font-size: 13px;
+        line-height: 18px;
+        margin: 8px 2px 30px 2px;
+    }
+
+    .btn-general {
+        padding: 8px 25px 6px 25px;
+        font-size: 10px;
+    }
+
+    /* Section headings */
+    .vertical-heading {
+        text-align: center;
+    }
+
+    .vertical-heading h5 {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        display: block;
+        position: static;
+        margin-bottom: 15px;
+    }
+
+    .vertical-heading h2 {
+        font-size: 29px;
+        line-height: normal;
+        margin: 0;
+    }
+
+    /* about section */
+    .content-box-lg {
+        padding: 70px 0;
+    }
+
+    #about-left {
+        margin-bottom: 50px;
+    }
+
+    #about-right {
+        text-align: center;
+    }
+
+    /* About 02*/
+    .content-box-md {
+        padding: 80px 0;
+    }
+
+    .about-item {
+        padding: 55px 30px;
+        margin-bottom: 35px;   
+    }
+
+    .about-item i {
+        font-size: 30px;
+    }
+
+    .about-item h3 {
+        font-size: 18px;
+    }
+
+    /* Skills / Team */
+    #team-left .vertical-heading {
+        min-height: 130px;
+    }
+
+    .skill h4 {
+        font-size: 14px;
+        line-height: 35px;
+    }
+
+    /* Tech Statement */
+    #tech-statement h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    /* Services 02 */
+    .r-tabs-accordion-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .r-tabs-accordion-title a {
+        font-family: "Raleway", sans-serif;
+        font-size: 20px;
+        color: #212226;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    .r-tabs-accordion-title.r-tabs-state-active a {
+        color: #4acaa8;
+        font-weight: 700;
+        border-bottom: 3px solid #4acaa8;
+        padding-bottom: 5px;
+        transition: border-color 500ms linear;
+        -webkit-transition: border-color 500ms linear;
+    }
+
+    /* blog */
+    .blog-post .post-meta p {
+        line-height: 14px;
+        padding: 0;
+    }
+}

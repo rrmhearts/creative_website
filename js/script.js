@@ -38,22 +38,19 @@ $( () => {
         responsiveClass:true,
         responsive:{
             0:{
-                items:2,
+                items: 1,
                 nav:true,
                 dots: false,
                 navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
             },
-            600:{
-                items:3,
-                nav:false
-            },
-            990:{
-                items:2,
-                nav:false,
+            480:{
+                items: 2,
+                nav: true,
+                dots: false
             },
             1600:{
-                items:3,
-                nav:false,
+                items: 3,
+                nav: false,
             }
         }
     });

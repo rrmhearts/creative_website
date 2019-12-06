@@ -229,6 +229,7 @@ Buttons
     border-radius: 4px;
     font-size: 22px;
     display: none;
+    z-index: 2;
 }
 /********************************
 Arrow Down

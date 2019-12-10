@@ -83,9 +83,9 @@
     }
 
     .r-tabs-accordion-title.r-tabs-state-active a {
-        color: #4acaa8;
+        color: #00B1B5;
         font-weight: 700;
-        border-bottom: 3px solid #4acaa8;
+        border-bottom: 3px solid #00B1B5;
         padding-bottom: 5px;
         transition: border-color 500ms linear;
         -webkit-transition: border-color 500ms linear;
@@ -100,6 +100,87 @@
 
 /* Extra Small devices (Landscape phones & portrait phones) */
 @media (min-width: 0px) and (max-width: 767px) {
+
+    /* Navigation */
+    .navbar {
+        padding: 20px 0;
+    }
+
+    .site-nav-wrapper,
+    .white-nav-top {
+        padding: 0;
+    }
+
+    /***************************************
+    Mobile Menu
+    **************************************/
+
+    #mobile-nav-open-btn {
+        /* Set to visible */
+        display: block;
+    }
+
+    #mobile-nav {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        background-color: rgb(255,255,255,.9);
+        transition: all 300ms linear;
+        -webkit-transition: all 300ms linear;
+        overflow-y: hidden;
+    }
+
+    #mobile-nav-close-btn {
+        font-family: "Raleway", sans-serif;
+        font-size: 70px;
+        color: #212226;
+        font-weight: 400;
+        cursor: pointer;
+        position: absolute;
+        top: -29px;
+        right: 9px;
+        transition: .3s;
+        -webkit-transition: .3s;
+        z-index: 3;
+    }
+
+    #mobile-nav-content {
+        text-align: center;
+        width: 100%;
+        margin-top: 45px;
+        position: relative;
+        top: 10%;
+    }
+
+    #mobile-nav-content ul li {
+        margin-bottom: 10px;
+    }
+
+    #mobile-nav a {
+        font-family: "Raleway", sans-serif;
+        font-size: 18px;
+        color: #212226;
+        font-weight: 400;
+        text-transform: uppercase;
+        display: inline;
+    }
+
+    #mobile-nav a:hover,
+    #mobile-nav a:focus,
+    #mobile-nav-close-btn:hover,
+    #mobile-nav-close-btn:focus {
+        color: #00B1B5;
+        background: none;
+    }
+
+    /* Scroll Spy active effect (Bootstrap feature) */
+    .white-nav-top #mobile-nav ul.nav > li.active > a {
+        color: #00B1B5;
+        font-weight: 500;
+    }
 
     /* home */
     #home-heading h1 {
@@ -200,9 +281,9 @@
     }
 
     .r-tabs-accordion-title.r-tabs-state-active a {
-        color: #4acaa8;
+        color: #00B1B5;
         font-weight: 700;
-        border-bottom: 3px solid #4acaa8;
+        border-bottom: 3px solid #00B1B5;
         padding-bottom: 5px;
         transition: border-color 500ms linear;
         -webkit-transition: border-color 500ms linear;

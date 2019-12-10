@@ -166,14 +166,14 @@ $('#testimonial-slider').owlCarousel({
         if ( $(window).scrollTop() > 90 ) { //620
             // Show white one
             $("nav").addClass("white-nav-top");
-            $(".navbar-brand img").attr("src","img/logo/logo-dark.png");
+            //$(".navbar-brand img").attr("src","img/logo/logo-dark.png");
 
             // Show back to top button
             $("#back-to-top").fadeIn();
         } else {
             // Hide white one
             $("nav").removeClass("white-nav-top");
-            $(".navbar-brand img").attr("src","img/logo/logo.png");
+            //$(".navbar-brand img").attr("src","img/logo/logo.png");
 
             // Hide back to top button
             $("#back-to-top").fadeOut();
@@ -183,6 +183,24 @@ $('#testimonial-slider').owlCarousel({
 
     // On page load
     showHideNav();
+
+    let showHideMenu = () => {
+        $("#mobile-nav").fadeOut();
+
+        $("#mobile-nav-open-btn").click((event) => {
+            $("#mobile-nav").fadeIn();
+        });
+
+        $("#mobile-nav-close-btn").click((event) => {
+            $("#mobile-nav").fadeOut();
+        });
+
+        $("#mobile-nav-content").click((event) => {
+            $("#mobile-nav").fadeOut();
+        })
+    }
+
+    showHideMenu();
 
     // On scroll
     $(window).scroll(() => {

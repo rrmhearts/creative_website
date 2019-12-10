@@ -1,6 +1,6 @@
 /********************************
 Colors:
-    Best green: #4acaa8
+    Best green: #4acaa8  #00B1B5
     Grey:        #212226
     White Smoke: #f4f4f4
     White:       #fff
@@ -100,7 +100,7 @@ ul.navbar-nav > li > a {
 ul.navbar-nav > li > a:hover,
 ul.navbar-nav > li > a:focus {
     background: none;
-    color: #4acaa8;
+    color: #00B1B5;
 }
 
 .white-nav-top {
@@ -109,7 +109,6 @@ ul.navbar-nav > li > a:focus {
     box-shadow: 0 8px 6px -9px #999;
     -webkit-box-shadow: 0 8px 6px -9px #999;
     z-index: 2;
-
 }
 
 .white-nav-top ul.navbar-nav > li > a {
@@ -118,15 +117,29 @@ ul.navbar-nav > li > a:focus {
 
 .white-nav-top ul.navbar-nav > li > a:hover,
 .white-nav-top ul.navbar-nav > li > a:focus {
-    color: #4acaa8;
+    color: #00B1B5;
 }
 
 /* Scroll Spy active effect (Bootstrap feature) */
 .white-nav-top ul.navbar-nav > li.active > a {
-    color: #4acaa8;
+    color: #00B1B5;
     font-weight: 500;
 }
 
+/***************************************
+ Mobile Menu Must be here to hide!
+ **************************************/
+ #mobile-nav-open-btn {
+    font-size: 30px;
+    color: #00B1B5;
+    cursor: pointer;
+    z-index: 2; /*stay on top */
+    position: absolute; 
+    right: 11px;
+    top: 6px;
+    /* hide mobile nav open btn */
+    display: none;
+}
 
 /********************************
 Home
@@ -184,7 +197,7 @@ Home
 
 
 #home-heading h1 span {
-    color: #4acaa8;
+    color: #00B1B5;
     font-weight: 300;
 }
 
@@ -217,8 +230,8 @@ Buttons
 .btn-home:hover,
 .btn-home:focus {
     color: #fff;
-    background-color: #4acaa8;
-    border: 1px solid #4acaa8;
+    background-color: #00B1B5;
+    border: 1px solid #00B1B5;
 }
 
 .btn-back-to-top {
@@ -250,7 +263,7 @@ Arrow Down
 
 #arrow-down:focus,
 #arrow-down:hover {
-    color: #4acaa8;
+    color: #00B1B5;
 }
 
 /********************************
@@ -268,7 +281,7 @@ Content Boxes
 Vertical/Horizontal headings
 *********************************/
 .vertical-heading h5 {
-    color: #4acaa8;
+    color: #00B1B5;
     font-size: 14px;
     text-transform: uppercase;
     word-spacing: 3px;
@@ -302,7 +315,7 @@ Vertical/Horizontal headings
 
 .horizontal-heading h5 {
     font-size: 16px;
-    color:#4acaa8;
+    color:#00B1B5;
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 10px;
@@ -347,9 +360,9 @@ About 02
 .about-item hr {
     width: 50px;
     height: 2px;
-    background-color: #4acaa8;
+    background-color: #00B1B5;
     margin: 0 auto;
-    border-color: #4acaa8;
+    border-color: #00B1B5;
 }
 
 .about-item p {
@@ -358,7 +371,7 @@ About 02
 
 /* hover state */
 .about-item:hover {
-    background-color: #4acaa8;
+    background-color: #00B1B5;
 }
 
 .about-item:hover i,
@@ -416,7 +429,7 @@ Skills/ Team
 }
 
 .team-member-info h6 {
-    color: #4acaa8;
+    color: #00B1B5;
     font-size: 16px;
     margin: 0;
 }
@@ -471,7 +484,7 @@ ul.social-list li:nth-child(3) a:hover {
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-    background-color: #4acaa8
+    background-color: #00B1B5
 }
 
 /********************************************
@@ -494,7 +507,7 @@ Skills
 }
 
 .progress-bar {
-    background-color: #4acaa8;
+    background-color: #00B1B5;
     position: relative; /* for placing percentages*/
 }
 
@@ -536,8 +549,8 @@ Skills
 .btn-skill:hover,
 .btn-skill:focus {
     color: #fff;
-    background-color: #4acaa8;
-    border: 1px solid #4acaa8;
+    background-color: #00B1B5;
+    border: 1px solid #00B1B5;
 }
 
 /********************************
@@ -566,7 +579,7 @@ Skills
 
 #tech-statement p {
     font-size: 14px;
-    color: #5cf1ca;
+    color: #00B1B5;
     font-family: "Raleway", sans-serif;
     margin-top: 8px;
 }
@@ -590,7 +603,7 @@ Skills
 }
 
 .service:hover .icon {
-    color: #4acaa8;
+    color: #00B1B5;
     transform: translateX(-20px);
     -webkit-transform: translateX(-20px);
 }
@@ -598,7 +611,7 @@ Skills
 .service h5 {
     font-size: 12px;
     text-transform: uppercase;
-    color: #4acaa8;
+    color: #00B1B5;
     margin: 0 0 6px 0;
 }
 
@@ -643,9 +656,9 @@ Skills
 
 /* Tab Active State */
 #services-tabs ul li.r-tabs-state-active a {
-    color: #4acaa8;
+    color: #00B1B5;
     font-weight: 700;
-    border-bottom: 3px solid #4acaa8;
+    border-bottom: 3px solid #00B1B5;
     padding-bottom: 5px;
     transition: border-color 500ms linear;
     -webkit-transition: border-color 500ms linear;
@@ -685,7 +698,7 @@ Skills
 .btn-aqua {
     color: #fff;
     border: 1px solid white;
-    background-color: #4acaa8;
+    background-color: #00B1B5;
 }
 
 .btn-aqua:hover,
@@ -734,8 +747,8 @@ Skills
 }
 
 #isotope-filters button.active span{
-    color: #4acaa8;
-    border-bottom: 3px solid #4acaa8;
+    color: #00B1B5;
+    border-bottom: 3px solid #00B1B5;
 }
 
 .portfolio-item {
@@ -923,7 +936,7 @@ Skills
     margin-top: 25px;
     text-transform: uppercase;
     font-family: "Raleway", "sans-serif";
-    color: #4acaa8;
+    color: #00B1B5;
     font-size: 12px;
     font-weight: 500;
     text-decoration: none;
@@ -1011,5 +1024,5 @@ footer p {
 }
 
 footer p span {
-    color: #4acaa8;
+    color: #00B1B5;
 }

@@ -131,6 +131,8 @@
         transition: all 300ms linear;
         -webkit-transition: all 300ms linear;
         overflow-y: hidden;
+        /* Make menu visible */
+        display: block;
     }
 
     #mobile-nav-close-btn {

@@ -141,6 +141,12 @@ ul.navbar-nav > li > a:focus {
     display: none;
 }
 
+#mobile-nav {
+    /* hide menu */
+    height: 0%;
+    display: none;
+}
+
 /********************************
 Home
 *********************************/

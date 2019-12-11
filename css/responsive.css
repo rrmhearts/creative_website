@@ -266,6 +266,26 @@
         line-height: 30px;
     }
 
+    /* Services 01 */
+
+    #services-01 img {
+        margin: 35px 0;
+    }
+
+    .service, .service .icon { /*need to remove class text-right*/
+        text-align: center;
+    }
+
+    .service h4 {
+        font-size: 18px;
+    }
+
+    .service:hover .icon {
+        color: #00B1B5;
+        transform: translateY(-20px);
+        -webkit-transform: translateY(-20px);
+    }
+
     /* Services 02 */
     .r-tabs-accordion-title {
         text-align: center;
@@ -291,9 +311,93 @@
         -webkit-transition: border-color 500ms linear;
     }
 
+    #services-tabs ul {
+        margin-bottom: 0;
+    }
+
+    #services-tabs h2 {
+        font-size: 40px;
+    }
+
+    #services-tabs h3 {
+        font-size: 28px;
+    }
+
+    .service-tab .tab-bg {
+        text-align: center;
+        padding: 40px 30px;
+        min-height: 0;
+    }
+
+    /* Portfolio */
+    
+    #portfolio {
+        padding-bottom: 0;
+    }
+    #isotope-filters {
+        margin-bottom: 0;
+    }
+
+    #isotope-filters button {
+        padding-right: 15px;
+    }
+
+    /* Testimonials */
+    #testimonial-slider {
+        top: 0;
+    }
+    
+    #testimonials .vertical-heading {
+        padding: 0;
+    }
+
+    .testimonial .row {
+        margin: 0;
+    }
+
+    .testimonial h3 {
+        font-size: 20px;
+    }
+
+    .testimonial .stars {
+        font-size: 16px;
+    }
+
+    .author img {
+        width: 100px !important;
+    }
+
     /* blog */
+    #blog-left {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .blog-post {
+        margin-bottom: 25px;
+    }
+
     .blog-post .post-meta p {
         line-height: 14px;
         padding: 0;
+    }
+
+    #contact-top {
+        text-align: center;
+    }
+
+    ul.office-details li{
+        display: block;
+        margin-top: 20px;
+    }
+
+    ul.office-details li i {
+        width: auto;
+        display: block;
+        margin-bottom: 3px;
+    }
+
+    ul.social-list {
+        margin-bottom: 30px;
     }
 }

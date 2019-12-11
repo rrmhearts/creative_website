@@ -493,6 +493,10 @@ ul.social-list li:nth-child(3) a:hover {
     background-color: #00B1B5
 }
 
+.owl-carousel i.fa {
+    font-size: 20px;
+}
+
 /********************************************
 Skills
 ********************************************/

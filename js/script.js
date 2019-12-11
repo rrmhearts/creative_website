@@ -8,20 +8,28 @@ $(window).on("load", () => {
 
     // Initialize and add the map
     // The location of Uluru
-    var uluru = {lat: -25.344, lng: 131.036};
+    let uluru = {lat: -25.344, lng: 131.036};
     // The map, centered at Uluru
-    var map = new google.maps.Map(
+    let map = new google.maps.Map(
         document.getElementById('map'), {zoom: 4, center: uluru});
     // The marker, positioned at Uluru
-    var marker = new google.maps.Marker({position: uluru, map: map});
+    let marker = new google.maps.Marker({position: uluru, map: map});
 
-    var infowindow = new google.maps.InfoWindow({
+    let infowindow = new google.maps.InfoWindow({
         content: "Uluru Place"
     });
 
     marker.addListener('click', function() {
         infowindow.open(map, marker);
-    })
+    });
+
+    // May not be needed, but keeps marker in center of screen.
+    google.maps.event.addDomListener(window, 'resize', () => {
+        //alert('Screen resized');
+        let center = map.getCenter();
+        google.maps.event.trigger(map, 'resize');
+        map.setCenter(center);
+    });
 });
 
 // Document load
@@ -36,6 +44,8 @@ $( () => {
         margin:0,
         autoplayHoverPause: true,
         responsiveClass:true,
+        /* replicated here to apply css */
+        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
         responsive:{
             0:{
                 items: 1,
@@ -50,7 +60,8 @@ $( () => {
             },
             1600:{
                 items: 3,
-                nav: false,
+                nav: true,
+                dots: false
             }
         }
     });

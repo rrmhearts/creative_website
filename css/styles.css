@@ -1045,3 +1045,13 @@ footer p span {
      animation-duration: 2.0s;
      animation-delay: .5s;
  }
+
+ #home-text {
+    animation-duration: 2s;
+    animation-delay: 2.2s; 
+ }
+
+ #home-btn {
+    animation-duration: 2s;
+    animation-delay: 2.5s; 
+ }

@@ -240,4 +240,8 @@ $(() => {
     //element.classList.add('animated', 'bounceOutLeft')
 
     $("#home-heading-1").addClass("animated fadeInDown");
+    $("#home-text").addClass("animated zoomIn");
+    $("#home-btn").addClass("animated zoomIn");
+    $("#arrow-down").addClass("animated fadeInDown infinite");
+
 })

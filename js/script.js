@@ -34,6 +34,7 @@ $(window).on("load", () => {
 
 // Document load
 $( () => { 
+
 /********************************
  * Owl Carousel
  *******************************/
@@ -226,3 +227,17 @@ $( () => {
         }, 1250, "easeInOutExpo"); //easing plugin
     });
 });
+
+/**********************************
+ * All the Animation
+ **********************************/
+$(() => {
+
+    // Initialize AOS
+    AOS.init();
+
+    //const element =  document.querySelector('.my-element')
+    //element.classList.add('animated', 'bounceOutLeft')
+
+    $("#home-heading-1").addClass("animated fadeInDown");
+})

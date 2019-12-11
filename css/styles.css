@@ -1036,3 +1036,12 @@ footer p {
 footer p span {
     color: #00B1B5;
 }
+
+/*****************************
+ * Animation
+ *****************************/
+
+ #home-heading-1 {
+     animation-duration: 2.0s;
+     animation-delay: .5s;
+ }

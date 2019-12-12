@@ -1,12 +1,7 @@
 # creative_website
 Based on a udemy course. Gradually making changes to become a personal site.
 
-# Wire Framing
-Trying Balsamiq
-Instant Wireframe Chrome extension
-I love wireframes wireframes.tumblr.com
-
-# Web Development Resources
+## Web Development Resources
 * realfavicongenerator
 * Google Fonts
 * Font Awesome Library
@@ -16,23 +11,31 @@ I love wireframes wireframes.tumblr.com
 * converterpoint (HTML5 video conversion)
 * webfx.com/web-design/hex-to-rgb (color conversion)
 
-# Visual Code
+### Wire Framing
+* Trying Balsamiq
+* Instant Wireframe Chrome extension
+* I love wireframes wireframes.tumblr.com
+
+### Visual Code
 * Emmet
 * JS CSS Minifier
 
-# Tools and Libraries
+## Tools and Libraries
 * jQuery
 * Bootstrap
 * Owl Carousel
+* Animate
+* AOS
 
-# Image Optimization
-tinypng.com
-optimizilla
+### Image Optimization
+* tinypng.com
+* optimizilla
 
-# Validation
+## Testing
+### Validation
 For validating HTML: validator.w3.org
 
 For validating CSS: jigsaw.w3.org
 
-# Cross Browser Testing
+### Cross Browser Testing
 Check all major browsers!

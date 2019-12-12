@@ -401,6 +401,10 @@ About 02
 .about-item hr {
     transition: all 500ms ease-in-out;
 }
+.about-item h3,
+.about-item p {
+    transition: all 400ms linear;
+}
 
 /********************************
 Skills/ Team
@@ -1031,6 +1035,7 @@ footer {
 footer p {
     color: #fff;
     line-height: 20px;
+    margin: 0;
 }
 
 footer p span {

@@ -104,7 +104,7 @@ $('#testimonial-slider').owlCarousel({
             let newWidth = ($(obj).attr('aria-valuenow') + '%');
             $(obj).animate({
                 'width': newWidth
-            }, 1500);
+            }, 2000);
         });
         this.Waypoint.destroyAll();
     },
